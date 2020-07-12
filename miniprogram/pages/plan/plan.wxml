@@ -1,0 +1,33 @@
+<view class="plan">
+
+  <!-- <view class="plan-header">
+    <button hover-class='planBtn-hover' class='planBtn'>状态排序</button>
+    <button hover-class='planBtn-hover' class='planBtn'>时间排序</button>
+    <button hover-class='planBtn-hover' class='planBtn'>等级排序</button>
+  </view> -->
+
+  <view class="plan-center">
+    <view class="plan-center-container">
+      <view data-id="{{item.id}}" class="plan-list {{'plan-list-level'+item.level}} " wx:for='{{planArr}}' wx:key='index'>
+        <view class="plan-list-left" bindtap="changeStstus" data-id="{{item.id}}">
+          <image src='{{item.status == 0 ? "../../images/star_no.png" : "../../images/star_yes.png"}}'></image>
+        </view>
+        <view class="plan-list-center" bindtap="editPlan" data-id="{{item.id}}">
+          <view class="plan-list-center1">{{item.textArea}}</view>
+          <view class="plan-list-center2">
+            <view class="plan-list-center-child1">时间：{{item.date1}} {{item.startTime}}~{{item.endTime}}</view>
+            <view class="plan-list-center-child2">重要等级：{{levelArr[item.level]}}</view>
+          </view>
+        </view>
+        <view class="plan-list-right" bindtap="delPlan" data-id="{{item.id}}">
+          <image src="../../images/delPlan.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="plan-footer">
+    <button hover-class='chooseBtn-hover' class='update' bindtap="addPlan">添加计划</button>
+  </view>
+
+</view>

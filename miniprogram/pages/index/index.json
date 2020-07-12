@@ -1,3 +1,11 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "星空萤火",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "wux-floating-button": "../../dist/floating-button/index",
+    "wux-divider": "../../dist/divider/index",
+    "wux-icon": "../../dist/icon/index",
+    "wux-toptips": "../../dist/toptips/index",
+    "wux-input": "../../dist/input/index"
+  }
 }

@@ -1,0 +1,21 @@
+/* pages/toAbout/toAbout.wxss */
+.about {
+  font-size: 24rpx;
+  /* background-color: rgb(250, 69, 69);
+  color: white; */
+  color: #f2709c;
+}
+.item {
+  margin-bottom: 10rpx;
+}
+.about-title {
+  text-align: center;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+}
+
+.about-one {
+
+}
+
+

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "详情",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "wux-icon": "../../dist/icon/index",
+    "wux-notice-bar": "../../dist/notice-bar/index",
+    "wux-toptips": "../../dist/toptips/index",
+    "wux-button": "../../dist/button/index"
+  }
+}

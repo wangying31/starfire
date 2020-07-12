@@ -1,0 +1,79 @@
+<!--my.wxml-->
+<view class='page' catchtouchmove="{{pageData}}">
+  <view class="my-wrap">
+    <view class='my-info' style='display: {{showAdd}}'>
+      <view class='my-info-child' bindtap='toMyTravel'>
+        <view class='my-info-one'>我的日记</view>
+        <view class='my-info-two'>{{travelNum}}</view>
+      </view>
+      <view class='my-info-border'></view>
+      <view class='my-info-child' bindtap='toMyStar'>
+        <view class='my-info-one'>我的收藏</view>
+        <view class='my-info-two'>{{starNum}}</view>
+      </view>
+      <view class='my-info-border'></view>
+      <view class='my-info-child' bindtap='toWatch'>
+        <view class='my-info-one'>我的关注</view>
+        <view class='my-info-two'>{{watch.length}}</view>
+      </view>
+      <view class='my-info-border' style='left: 75%'></view>
+      <view class='my-info-child' bindtap='toFans'>
+        <view class='my-info-one'>我的粉丝</view>
+        <view class='my-info-two'>{{fans.length}}</view>
+      </view>
+    </view>
+
+    <view class='my-info' style='display: {{showAdd == "flex" ? "none" : "flex" }}'>
+      <view class='my-info-child' bindtap='toMyStar' style='width: 33.333%'>
+        <view class='my-info-one'>我的收藏</view>
+        <view class='my-info-two'>{{starNum}}</view>
+      </view>
+      <view class='my-info-border' style='left: 33.333%'></view>
+      <view class='my-info-child' bindtap='toWatch' style='width: 33.333%'>
+        <view class='my-info-one'>我的关注</view>
+        <view class='my-info-two'>{{watch.length}}</view>
+      </view>
+      <view class='my-info-border' style='left: 66.666%'></view>
+      <view class='my-info-child' bindtap='toFans' style='width: 33.333%'>
+        <view class='my-info-one'>我的粉丝</view>
+        <view class='my-info-two'>{{fans.length}}</view>
+      </view>
+    </view>
+
+    <image src='{{bgImg}}' class='show-img' mode='aspectFill'></image>
+    <!-- <wux-icon size='22' type='md-planet' class='edit-img' bindtap='changeImg' /> -->
+    <view bindtap='refresh' class='refresh-img animationSlow {{animationSlow}}'>
+      <image style="width: 70%; height: 70%;"  src='../../images/sx.png'></image>
+    </view>
+    <!-- <view bindtap='refresh' class='refresh-img animationSlow1 {{animationSlow1}}'>
+      <image style="width: 62%; height: 62%;"  src='../../images/shuaxin.png'></image>
+    </view> -->
+    <image class='edit-img' src='../../images/skin.png' bindtap='changeImg'></image>
+    <view class='my-image' wx:if='{{hasUserInfo}}'>
+    
+      <image src="{{userInfo.avatarUrl}}" bindtap="showBGTX">
+      </image>
+      <image src='../../images/photo.png' class="editImage" bindtap="uploadTX"></image>
+      <view class='my-info-detail'>
+        <view>{{userInfo.nickName}}
+        </view>
+        <image src='{{userGender}}' class='xingbie'></image>
+      </view>
+    </view>
+    <view class='my-image' wx:if='{{!hasUserInfo}}'>
+      <view class='my-image-no'>
+        <button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">
+          点击登录
+        </button>
+      </view>
+    </view>
+  </view>
+<wux-toptips id="wux-toptips" />
+
+  <wux-cell thumb='../../images/info_list.png' title="我的信息" is-link bindtap='toMyDetail' extra=" "></wux-cell>
+  <wux-cell thumb='../../images/ver_list.png' title="版本号" bindtap='showVersion' is-link extra="{{version}}"></wux-cell>
+  <wux-cell thumb='../../images/answer.png' title="关于" is-link bindtap='toAbout' extra=" "></wux-cell>
+
+  <wux-dialog id="wux-dialog" />
+  <wux-dialog id="wux-dialog--alert" />
+</view>
