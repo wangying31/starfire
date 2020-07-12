@@ -1,26 +1,64 @@
 {
-  "pages": [
+  "cloud": true,
+  "pages": [    
     "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/addPlan/addPlan",
+    "pages/plan/plan",
+    "pages/my/my",
+    "pages/answerList/answerList",
+    "pages/answerDetail/answerDetail",
+    "pages/myListDetail/myListDetail",
+    "pages/myTravel/myTravel",
+    "pages/showVer/showVer",
+    "pages/myFans/myFans",
+    "pages/myWatch/myWatch",
+    "pages/myInfo/myInfo",
+    "pages/userDetail/userDetail",
+    "pages/myStar/myStar",
+    "pages/testchat/testchat",
+    "pages/addTravel/addTravel",
+    "pages/editTravel/editTravel",
+    "pages/travelDetail/travelDetail",
+    "pages/go/go",
+    "pages/travelShow/travelShow"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f47695",
+    "navigationBarTitleText": "小柴日记簿",
+    "navigationBarTextStyle": "white"
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#f47695",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index1.png",
+        "selectedIconPath": "images/index2.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/plan/plan",
+        "iconPath": "images/plan1.png",
+        "selectedIconPath": "images/plan.png",
+        "text": "计划"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/my1.png",
+        "selectedIconPath": "images/my2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于我的信息的位置展示" 
+    }
+  },
+  "sitemapLocation": "sitemap.json"
 }
