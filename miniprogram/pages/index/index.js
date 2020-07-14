@@ -23,7 +23,7 @@ Page({
     listArr: [
       {
         name: '最近更新',
-        color: '#f47695'
+        color: '#134695'
       },
       {
         name: '时间正序',
@@ -34,11 +34,11 @@ Page({
         color: 'black'
       },
       {
-        name: '点赞最高',
+        name: '热门火爆',
         color: 'black'
       }
     ],
-    listColor: ['#f47695', 'black', 'black', 'black'],
+    listColor: ['#134695', 'black', 'black', 'black'],
     starArr: [],
     likeArr: [],
     timeArr: [],
@@ -149,7 +149,7 @@ Page({
       copy[i].color = 'black';
     }
 
-    copy[index].color = '#f47695';
+    copy[index].color = '#134695';
     this.setData({
       listArr: copy,
       listIndex: index

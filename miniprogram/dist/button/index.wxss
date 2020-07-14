@@ -170,15 +170,15 @@
 
 .wux-button--positive, .wux-button--positive--disabled {
   border-color: transparent !important;
-  background-color: #f47695 !important;
+  background-color: #134695 !important;
   color: #fff !important;
 }
 
 .wux-button--positive.wux-button--outline,
 .wux-button--positive.wux-button--outline.wux-button--disabled {
-  border-color: #f47695 !important;
+  border-color: #134695 !important;
   background-color: transparent !important;
-  color: #f47695 !important;
+  color: #134695 !important;
 }
 
 .wux-button--positive.wux-button--clear,
@@ -189,7 +189,7 @@
 
 .wux-button--positive.wux-button--clear.wux-button--hover {
   background-color: rgba(0, 0, 0, 0) !important;
-  color: #f47695 !important;
+  color: #134695 !important;
 }
 
 .wux-button--positive.wux-button--hover {
@@ -199,21 +199,21 @@
 
 .wux-button--calm, .wux-button--calm--disabled {
   border-color: transparent !important;
-  background-color: #f47695 !important;
+  background-color: #134695 !important;
   color: #fff !important;
 }
 
 .wux-button--calm.wux-button--outline,
 .wux-button--calm.wux-button--outline.wux-button--disabled {
-  border-color: #f47695 !important;
+  border-color: #134695 !important;
   background-color: transparent !important;
-  color: #f47695 !important;
+  color: #134695 !important;
 }
 
 .wux-button--calm.wux-button--clear,
 .wux-button--calm.wux-button--clear.wux-button--disabled {
   background-color: transparent !important;
-  color: #f47695 !important;
+  color: #134695 !important;
 }
 
 .wux-button--calm.wux-button--clear.wux-button--hover {

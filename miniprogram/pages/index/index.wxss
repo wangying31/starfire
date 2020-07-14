@@ -301,7 +301,7 @@ page {
   /* min-width: 30rpx; */
   height: 100%;
   line-height: 70rpx;
-  color: #f47695;
+  color: #134695;
   /* color: #ffc3a0; */
   font-size: 24rpx;
   text-align: left;

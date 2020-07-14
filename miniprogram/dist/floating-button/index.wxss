@@ -216,13 +216,13 @@
 .wux-speed-dial--calm .wux-speed-dial__action,
 .wux-speed-dial--calm .wux-speed-dial__button,
 .wux-speed-dial--calm .wux-speed-dial__button--disabled {
-  background-color: #f2709c !important;
+  background-color: #134695 !important;
 }
 
 .wux-speed-dial--assertive .wux-speed-dial__action,
 .wux-speed-dial--assertive .wux-speed-dial__button,
 .wux-speed-dial--assertive .wux-speed-dial__button--disabled {
-  background-color: #ef473a !important;
+  background-color: #134695 !important;
 }
 
 .wux-speed-dial--balanced .wux-speed-dial__action,

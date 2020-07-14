@@ -34,7 +34,7 @@
 }
 
 .van-switch--on {
-  background-color: #f47695;
+  background-color: #134695;
 }
 
 .van-switch--on .van-switch__node {
