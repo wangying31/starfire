@@ -759,7 +759,7 @@ Page({
       //上传图片完成
       wx.hideLoading();
       wx.showLoading({
-        title: '上传日记中',
+        title: '上传点滴中',
         mask: true
       })
 
@@ -911,7 +911,7 @@ Page({
       //上传图片完成
       wx.hideLoading();
       wx.showLoading({
-        title: '上传日记中',
+        title: '上传点滴中',
         mask: true
       })
 
