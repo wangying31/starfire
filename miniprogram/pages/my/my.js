@@ -704,21 +704,10 @@ Page({
 
   },
   toAbout() {
-    if (wx.getStorageSync('openid')) {
-      wx.navigateTo({
-        url: '../toAbout/toAbout',
-      })
-    } else {
-      if (!wx.getStorageSync('openid')) {
-        $wuxToptips().error({
-          hidden: true,
-          text: '请先登录',
-          duration: 2500,
-          success() { },
-        })
-        return;
-      }
-    }
+    wx.navigateTo({
+      url: '../toAbout/toAbout',
+    })
+    
   },
 
   /**
