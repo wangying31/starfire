@@ -143,7 +143,7 @@ Page({
     if (bol == false) {
       wx.showModal({
         title: '是否锁定',
-        content: '锁定后他人将不能查看你的旅行日记',
+        content: '锁定后他人将不能查看你的内容详情',
         success(res) {
           if (res.confirm) {
             let db = wx.cloud.database();
@@ -178,7 +178,7 @@ Page({
     else {
       wx.showModal({
         title: '是否解锁',
-        content: '解锁后他人将能查看你的旅行日记',
+        content: '解锁后他人将能查看你的内容详情',
         success(res) {
           if (res.confirm) {
             let db = wx.cloud.database();
