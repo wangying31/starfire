@@ -1,4 +1,6 @@
 <!--index.wxml-->
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
 <view class='index-top'>
   <!-- 搜索框 -->
   <view class='index-search'>
