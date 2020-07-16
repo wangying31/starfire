@@ -65,9 +65,9 @@
 }
 
 .guanzhu {
-  border: 2rpx solid #f2709c;
+  border: 2rpx solid #134695;
   border-radius: 4rpx;
-  color: #f2709c;
+  color: #134695;
   position: absolute;
   right: 20rpx;
   height: 44rpx;

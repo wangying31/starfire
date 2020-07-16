@@ -64,16 +64,17 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "pages/my/my",
-					"pathName": "pages/my/my",
+					"id": 1,
+					"name": "pages/showVer/showVer",
+					"pathName": "pages/showVer/showVer",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/toAbout/toAbout",
-					"pathName": "pages/toAbout/toAbout",
+					"id": 2,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
 					"scene": null
 				}
 			]
