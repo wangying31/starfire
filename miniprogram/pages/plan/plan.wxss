@@ -40,7 +40,7 @@
 }
 
 .update {
-  background-color: #f47695;
+  background-color: #134695;
   color: white;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
   width: 92%;
@@ -52,7 +52,7 @@
 }
 
 .planBtn {
-  background-color: #f47695;
+  background-color: #134695;
   color: white;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
   width: 26%;
@@ -195,6 +195,22 @@
 
 /* 黄色按钮样式 */
 .chooseBtn-hover {
-  background-color: #f2709c!important;
+  background-color: #134695!important;
   color: white!important;
+}
+
+.show-text {
+  font-size: 32rpx;
+  color: #f2709c;
+  margin-top: 20rpx;
+  width: 100%;
+  display: block;
+}
+.show-text-left {
+  margin-left: 20rpx;
+  text-align: left;
+}
+.show-text-right {
+  margin-right: 20rpx;
+  text-align: right;
 }
