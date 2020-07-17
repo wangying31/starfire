@@ -13,7 +13,8 @@ Page({
       //   level: 5,
       //   userInfo: 'xxx'
       // }
-    ]
+    ],
+    isShow: false
   },
   getPlan() {
     // wx.showLoading({
@@ -190,11 +191,18 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if(wx.getStorageSync('openid')) {
-      wx.showLoading({
-        title: '正在加载',
-      })
-      this.getPlan()
+    
+    let isShow = +new Date() > +new Date('2020/07/16 16:00:00');
+    if(isShow) {
+      this.setData({
+        isShow: isShow
+      });
+      if(wx.getStorageSync('openid')) {
+        wx.showLoading({
+          title: '正在加载',
+        })
+        this.getPlan()
+      }
     }
   },
 
@@ -216,10 +224,12 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    wx.showLoading({
-      title: '正在加载',
-    })
-    this.getPlan()
+    if(this.isShow) {
+      wx.showLoading({
+        title: '正在加载',
+      })
+      this.getPlan()
+    }
   },
 
   /**
