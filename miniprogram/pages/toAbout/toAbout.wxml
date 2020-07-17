@@ -1,9 +1,11 @@
 <!--pages/toAbout/toAbout.wxml-->
 <view class="about">
   <view class="item about-title">星空萤火</view>
-  <view class="item about-one">卷首语：——萤火虫为什么可以发光？</view>
+  <view class="item about-one">卷首语：</view>
+  <view class="item">——萤火虫为什么可以发光？</view>
   <view class="item about-two">——因为它是个路痴，总是容易迷路，所以要给自己开盏灯，才能找到回家的路~~</view>
-  <view class="item about-three">卷尾语：——因为他是个胆小鬼，害怕夜的寂寞，所以要像星星一样闪，才能忘记内心的孤单~~</view>
-  <view class="item about-six">好啦，不多说了，其实这就是一个记录生活点点滴滴的笔记本~~</view>
+  <view class="item about-three">卷尾语：</view>
+  <view class="item">——因为他是个胆小鬼，害怕夜的寂寞，所以要像星星一样闪，才能忘记内心的孤单~~</view>
+  <!-- <view class="item about-six">好啦，不多说了，其实这就是一个记录生活点点滴滴的笔记本~~</view> -->
 </view>
 
