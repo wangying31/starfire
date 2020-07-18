@@ -1,3 +1,4 @@
+const app = getApp();
 const util = require('../../utils/util.js');
 import {
   $wuxToptips
@@ -243,6 +244,9 @@ Page({
   },
   // 初始化点赞图标
   initLikeArr() {
+    if (!app.globalData.login) {
+      return false;
+    }
     let copy = this.data.userData.likeArr;
     let copy1 = this.data.travelObj;
     let arr = this.data.likeArr;
